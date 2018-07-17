@@ -1,0 +1,9 @@
+org\myproject\remotepojo\RemoteUser.class
+org\myproject\service\UserService.class
+org\myproject\dao\UserDao.class
+org\myproject\controller\UserController.class
+org\myproject\util\DynamicDataSource.class
+org\myproject\util\CustomContextHolder.class
+org\myproject\remotedao\RemoteUserDao.class
+org\myproject\service\impl\UserServiceImpl.class
+org\myproject\pojo\User.class

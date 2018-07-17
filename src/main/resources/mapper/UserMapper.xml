@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.myproject.dao.UserDao">
+
+    <sql id="column">
+        u.id AS id,
+        u.first_name AS firstName,
+        u.last_name AS lastName,
+        u.password AS password,
+        u.age AS age
+    </sql>
+
+    <select id="getUser" resultType="user">
+        SELECT <include refid="column"></include>
+        FROM t_user u
+        WHERE id=#{id}
+    </select>
+</mapper>
